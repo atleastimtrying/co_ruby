@@ -1,0 +1,15 @@
+<p>Total : <%= @total %> </p>
+<%= @ages %>
+<ul>
+	<% @ages.each do |age| %>
+		<li><%= age * 1000 %></li>
+	<% end %>
+</ul>
+
+<h1><%= @person[:name] %></h1>
+<h2>Aged: <%= @person[:age] %></h2>
+<p>Interests: 
+	<% @person[:interests].each do |interest| %>
+	<%= interest %>
+	<% end %> 
+</p>
